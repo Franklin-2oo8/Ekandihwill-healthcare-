@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekandiwill therapy and healthcare</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #0056b3;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('clinic.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: blue;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: blue;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 60px 10px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+        color: blue;
+      }
+
+      .hero p {
+        font-size: 1rem;
+        color: blue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EKANDIWILL THERAPY AND HEALTH CARE</h1>
+    <p>Your Health, Our Priority</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to EKANDIWILL THERAPY AND HEALTH CARE</h1>
+    <p>Providing quality healthcare services with compassion and care.</p>
+  </section>
+  <section id="about" style="padding: 60px 20px; background: #f8f9fa; text-align: center;">
+    <h2 style="font-size: 2rem; margin-bottom: 20px;">About Us</h2>
+    <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
+      EKANDIWILL THERAPY AND HEALTH Service is a registered alternative medicine 7center (RC: 10626669) specializing in acupuncture and comprehensive natural health care.<br>
+Conveniently situated at No. 9 Specialist Road (near Eminence Hotel Sign Post) Uyo Nigeria, our center provides targeted acupuncture therapy for numerous health challenges, including:<br>
+<ul><li>
+  Fibroids, ovarian issues, and womb health
+</li>
+<li>Diabetes management and cholesterol control</li>
+<li>Stroke rehabilitation and paralysis support</li>
+<li>Chronic pain (waist, lumbar, stomach, toothache)</li>
+<li>Respiratory conditions (asthma, cough)</li>
+<li>Infections, malaria, and insomnia
+Kidney problems, stress, and menopause symptoms</li></ul>
+<br><br>
+Every treatment is tailored to the individual, with the goal of achieving meaningful and lasting improvement in your health and well-being.
+We warmly invite you to experience the transformative benefits of acupuncture at EKANDIWILL.
+    </p>
+  </section>
+
+  <section id="services" style="padding: 60px 20px; background: white; text-align: center;">
+    <h2 style="font-size: 2rem; margin-bottom: 40px;">Our Services</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+      <div style="max-width: 300px;">
+        <img src="check.jpg" alt="Checkups" style="width:100%; height:200px; object-fit:cover; border-radius:8px;" />
+        <h3 style="margin-top: 10px;">General Checkups</h3>
+      </div>
+      <div style="max-width: 300px;">
+<img src="pediatrics.jpg" alt="Pediatrics" style="width:100%; height:200px; object-fit:cover; border-radius:8px;" />
+        <h3 style="margin-top: 10px;">Pediatrics</h3>
+      </div>
+      <div style="max-width: 300px;">
+        <img src="diagnosis.jpg" alt="Diagnostics" style="width:100%; height:200px; object-fit:cover; border-radius:8px;" />
+        <h3 style="margin-top: 10px;">Diagnostics</h3>
+      </div>
+    </div>
+  </section>
+  <section id="contact" style="padding: 60px 20px; background: #f8f9fa; text-align: center;">
+    <h2 style="font-size: 2rem; margin-bottom: 20px;">Book an Appointment / Make Inquiry</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 600px; margin: 0 auto; text-align: left;">
+      <label for="name" style="display:block; margin-top:15px;">Full Name</label>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+
+      <label for="email" style="display:block; margin-top:15px;">Email Address</label>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+
+      <label for="message" style="display:block; margin-top:15px;">Your Message</label>
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+
+      <button type="submit" style="margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Submit</button>
+    </form>
+  </section>
+ <footer style="padding: 20px; text-align: center; background-color: #343a40; color: white;">
+    &copy; 2026 LifeCare Health Center. All rights reserved.
+  </footer>
+
+  <script>
+    // Simple animation on scroll (fade-in)
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(sec => {
+      sec.style.opacity = 0;
+      sec.style.transform = "translateY(50px)";
+      sec.style.transition = "all 0.8s ease-out";
+      observer.observe(sec);
+    });
+  </script>
+</body>
+</html>
